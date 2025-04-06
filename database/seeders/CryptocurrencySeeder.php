@@ -14,7 +14,7 @@ class CryptocurrencySeeder extends Seeder
      */
     public function run()
     {
-        // การใช้ Eloquent Model เพื่อสร้างข้อมูลในตาราง cryptocurrencies
+
         Cryptocurrency::create([
             'Crypto_name' => 'Bitcoin',
             'Symbol' => 'BTC',

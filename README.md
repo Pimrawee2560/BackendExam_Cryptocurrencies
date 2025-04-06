@@ -1,18 +1,28 @@
-ข้อสอบ ex1 = โฟลเดอร์ views ไฟล์  er (1).jpg
+# -Backend-exam-Crypto [ไฟล์ README.md แสดงขั้นตอนการ Run project]
+[ex1] ให้ออกแบบระบบฐานข้อมูล(ทำเป็นรูปแบบ ER) ที่เป็นตัวกลางของการแลกเปลี่ยน Cryptocurrencies เช่น Bitcoin โดย สามารถนำเงิน Fiat (THB,USD) มาซื้อเหรียญ จาก User คนอื่นๆในระบบได้ และสามารถจะโอนเหรียญหากันภายในระบบ หรือ โอนหาคนอื่นภายนอกระบบได้ 
+ยกตัวอย่าง https://c2c.binance.com/th/trade/buy/BTC
+
+- ระบบสามารถตั้ง ซื้อ-ขาย Cryptocurrencies (BTC,ETH,XRP, DOGE)
+- ระบบบันทึกการโอนเงินและซื้อ-ขายแลกเปลี่ยน
+- ระบบมีการสร้างบัญชีผู้ใช้
+
+***ex1 = โฟลเดอร์ views ไฟล์  ex1 ER.jpg (PATH:resources\views\ex1 ER.jpg)
+
+[ex2] นำ ER Diagram จากข้อ 1 มาเขียนโดยใช้ Node.js หรือ PHP
+-เขียน Method ใน Model เพื่อดึงข้อมูลของ Model อื่นๆที่ความสัมพันธ์กัน ตัวอย่าง https://laravel.com/docs/8.x/eloquent-relationships#one-to-many
+-เขียน Controller และ Routing ในส่วนหลักๆของระบบ ไม่จำเป็นต้องทำทั้งหมด
+-สร้างไฟล์สำหรับ Seed ข้อมูล เพื่อใช้ในการทดสอบ
 
 
-ข้อสอบ ex2
 db = .env
 ตอนทำใช้  Apache MySQL เปิดโดย Xampp (จะใช้ตัวอื่นก็ได้)
 
-
-ขั้นตอนสร้าง Larabel 
+***ขั้นตอนสร้าง Larabel***
 1.ต้องติดตั้ง Laravel ก่อนตามคลิป https://www.youtube.com/watch?v=l4ee8GKyuLo&t=3634s&pp=ygUHbGVyYXZlbA%3D%3D
 2. เปิด command Prompt
 3. composer create-project --prefer-dist laravel/laravel excrypto
 4. เข้าโฟลเดอร์ project พิม cd ตามด้วยที่อยู่ ตัวอย่างเช่น cd C:\xampp\htdocs\excrypto
 4.พิม code . 
-
 5.นำไฟล์ที่เกี่ยวข้องไปวางใน Laravel ที่สร้าง
 .env
 
@@ -41,7 +51,7 @@ database\seeders\TransactionSeeder.php
 database\seeders\UserSeeder.php
 database\seeders\WalletSeeder.php
 
-ขั้นตอนการ run
+***ขั้นตอนการ run***
 1. เปิด command Prompt
 2. พิม
 cd C:\xampp\htdocs\cryto
